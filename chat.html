@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Чат</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <div class="audio-player">
+        <button id="playPause">▶️</button>
+        <div class="volume">
+            🔊
+            <input type="range" id="volume" min="0" max="1" step="0.05" value="0.5">
+        </div>
+    </div>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">📜 Стихи</a>
+            <a href="card.html">📇 Визитка</a>
+            <a href="chat.html">💬 Чат</a>
+        </nav>
+
+        <h1>Анонимный чат</h1>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot">Если хочешь найти собеседника, то напиши "найти"</div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Введите сообщение...">
+            <button class="btn" id="sendBtn">Отправить</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
