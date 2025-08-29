@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Стихи</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <div class="audio-player">
+        <button id="playPause">▶️</button>
+        <div class="volume">
+            🔊
+            <input type="range" id="volume" min="0" max="1" step="0.05" value="0.5">
+        </div>
+    </div>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">📜 Стихи</a>
+            <a href="card.html">📇 Визитка</a>
+            <a href="chat.html">💬 Чат</a>
+        </nav>
+
+        <h1>Стихи</h1>
+        <div id="poem">
+            <p>Я помню чудное мгновенье:<br>
+            Передо мной явилась ты,<br>
+            Как мимолётное виденье,<br>
+            Как гений чистой красоты.</p>
+        </div>
+        <button class="btn" id="togglePoem">Следующее стихотворение</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
