@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="audio/music.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <div class="audio-player">
+        <button id="playPause">▶️</button>
+        <div class="volume">
+            🔊
+            <input type="range" id="volume" min="0" max="1" step="0.05" value="0.5">
+        </div>
+    </div>
+
+    <div class="container">
+        <nav>
+            <a href="index.html">📜 Стихи</a>
+            <a href="card.html">📇 Визитка</a>
+            <a href="chat.html">💬 Чат</a>
+        </nav>
+
+        <h1>Моя визитка</h1>
+        <div class="card-container">
+            <div class="card" id="flipCard">
+                <div class="card-front">
+                    <h2>Анна</h2>
+                    <p>Поэт и мечтатель</p>
+                    <p>Санкт-Петербург</p>
+                </div>
+                <div class="card-back">
+                    <h2>ilv u</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
